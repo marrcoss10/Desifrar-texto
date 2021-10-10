@@ -18,7 +18,6 @@ for letra in Alphabet:					#recorremos todo el alfabeto
 	i = msj.count(letra)				#se cuenta cuantas veces aparece en el texto
 	por = [letra,(i/length)*100]			#se calcula la frecuencia y se guarda [letra, frecuencia]
 	FrecT.append(por)				#se añade al array 
-FrecT.sort(key=operator.itemgetter(1),reverse=True) 	#
 print(length)	
 i=0
 
