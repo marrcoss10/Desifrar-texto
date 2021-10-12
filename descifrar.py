@@ -3,7 +3,8 @@ import operator
 from collections import Counter 
 import string
 texto = open('texto1.txt','r')
-mensaje= texto.read()
+mensaje = texto.read()
+mensaje = mensaje.replace('v','0')
 msj = mensaje.lower()
 a=[' ',',','.','1','2','3','4','5','6','7','8','9','0','/n']
 length=len(msj)
@@ -49,5 +50,6 @@ msj = msj.replace('L','i')
 msj = msj.replace('M','f')
 msj = msj.replace('J','z')
 msj = msj.replace('F','h')
+msj = msj.replace('0','v')
 	
 print (msj.upper())	
